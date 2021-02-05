@@ -10,12 +10,23 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+	$('.firend h3').click(nameClick);
+	console.log("click is working");
 }
+
+function nameClick(e){
+	e.preventDefault();
+	var my_variable = $(this).text();
+	var new_varible = anagrammedName(my_variable);
+	$(this).text(new_variable);
+	console.log("click is working again");
+}
+
 
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
 	
-	if (name == "Doug Engelbart") {
+	if (name == "Doug Engelbart") 4{
 		return "Notable Grudge";
 	} 
 	else if (name == "Ivan Sutherland") {
