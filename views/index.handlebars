@@ -7,7 +7,7 @@
 	<link href = "css/bootstrap.css" rel = "stylesheet">
 	<link href = "css/bootstrap-theme.css" rel = "stylesheet">
 	<link href = "css/hci-friends.css" rel = "stylesheet">
-	
+	<meta name = "viewport" content = "width = device width, initial scale = "1.0>
 </head>
 
 <body>
@@ -20,11 +20,9 @@
 		<p>My friend is randomly generated</p>
 
 		{{#each friends}}	
-			<div class="friend" id="{{id}}">
-				<a href="friend" class="thumbnail">
-					<img src="{{imageURL}}" width = 350px class = "img-responseive">
-				</a>
-				<h3>{{name}}</h3>
+			<div id="my_friend">
+				<img src="{{imageURL}}" width = 350px class = "img-responseive">
+				<h3><a href="#">{{name}}</a></h3>
 				<p>{{description}}</p>
 			</div>
 		{{/each}}	
